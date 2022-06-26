@@ -208,7 +208,7 @@
                                     <label for="tekanan_darah">Tekanan Darah</label>
 
                                     <div class="input-group">
-                                        <input type="number"
+                                        <input type="number" name="tekanan_darah"
                                             class="form-control  @error('tekanan_darah') is-invalid @enderror"
                                             id="tekanan_darah" aria-describedby="tekanan_darah"
                                             value="{{ old('tekanan_darah') }}" placeholder="120/80">
@@ -230,7 +230,7 @@
                                     <label for="tb">Tinggi Badan</label>
 
                                     <div class="input-group">
-                                        <input type="number" class="form-control  @error('tb') is-invalid @enderror"
+                                        <input type="number" name="tb" class="form-control  @error('tb') is-invalid @enderror"
                                             id="tb" aria-describedby="tb" value="{{ old('tb') }}">
 
                                         <div class="input-group-prepend">
@@ -251,7 +251,7 @@
                                     <label for="bb">Berat Badan</label>
 
                                     <div class="input-group">
-                                        <input type="number" class="form-control  @error('bb') is-invalid @enderror"
+                                        <input type="number" name="bb" class="form-control  @error('bb') is-invalid @enderror"
                                             id="bb" aria-describedby="bb" value="{{ old('bb') }}">
 
                                         <div class="input-group-prepend">
@@ -272,7 +272,7 @@
                                     <label for="respiratory_rake">Respiratori Rake</label>
 
                                     <div class="input-group">
-                                        <input type="number"
+                                        <input type="number" name="respiratory_rake"
                                             class="form-control  @error('respiratory_rake') is-invalid @enderror"
                                             id="respiratory_rake" aria-describedby="respiratory_rake"
                                             value="{{ old('respiratory_rake') }}">
@@ -295,7 +295,7 @@
                                     <label for="heart_rafe">Heart Rafe</label>
 
                                     <div class="input-group">
-                                        <input type="number"
+                                        <input type="number" name="heart_rafe"
                                             class="form-control  @error('heart_rafe') is-invalid @enderror" id="heart_rafe"
                                             aria-describedby="heart_rafe" value="{{ old('heart_rafe') }}">
 
@@ -338,7 +338,7 @@
                                             <span class="input-group-text" id="biaya">RP</span>
                                         </div>
 
-                                        <input type="number" class="form-control  @error('biaya') is-invalid @enderror"
+                                        <input type="number" name="biaya" class="form-control  @error('biaya') is-invalid @enderror"
                                             id="biaya" aria-describedby="biaya" value="{{ old('biaya') }}">
 
                                         @error('biaya')

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/DataTables/datatables.min.css" />
     <link rel="stylesheet" href="/DataTables/responsive.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="/css/jQuery-1.12.1/jquery-ui.css">
 </head>
 
 <body>
@@ -99,7 +99,7 @@
 
                                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                                     onclick="event.preventDefault();
-                                                                                                                                                                                                                                                                                                                document.getElementById('logout-form').submit();">
+                                                    document.getElementById('logout-form').submit();">
                                                     {{ __('Logout') }}
                                                 </a>
 
