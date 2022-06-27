@@ -72,6 +72,13 @@
                 </li>
 
                 <li>
+                    <a href="{{ route('diagnosa') }}" class="{{ request()->is('diagnosa') ? ' mm-active' : '' }}">
+                        <i class="metismenu-icon pe-7s-id"></i>
+                        Diagnosa
+                    </a>
+                </li>
+
+                <li>
                     <a href="{{ route('kunjungan') }}"
                         class="{{ request()->is('kunjungan') ? ' mm-active' : '' }}">
                         <i class="metismenu-icon pe-7s-id"></i>

@@ -9,9 +9,9 @@
                         <i class="pe-7s-notebook icon-gradient bg-mean-fruit">
                         </i>
                     </div>
-                    <div>Data Poli
+                    <div>Data Diagnosa
                         <div class="page-title-subheading">
-                            Data Poli adalah halaman daftar data poli.
+                            Data Diagnosa adalah halaman daftar data diagnosa.
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <a href="{{ route('poli.create') }}" class="btn btn-primary mb-2">
+                <a href="{{ route('diagnosa.create') }}" class="btn btn-primary mb-2">
                     <i class="fas fa-plus"></i> Tambah
                 </a>
 
@@ -36,22 +36,26 @@
                                 <thead>
                                     <tr>
                                         <th class="text-center">No.</th>
-                                        <th>Nama Poli</th>
+                                        <th>Diagnosa (Indonesia)</th>
+                                        <th>Diagnosa (English)</th>
+                                        <th>Keterangan</th>
                                         <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     @php $no = 1 @endphp
-                                    @foreach ($polis as $poli)
+                                    @foreach ($diagnosas as $diagnosa)
                                         <tr>
                                             <th class="text-center" scope="row">{{ $no++ }}.</th>
-                                            <td>{{ $poli->nama_poli }}</td>
+                                            <td>{{ $diagnosa->nama_diagnosa }}</td>
+                                            <td><i>{{ $diagnosa->name_diagnosa }}</i></td>
+                                            <td>{{ $diagnosa->keterangan }}</td>
 
                                             <td class="text-center">
-                                                <form action="{{ route('poli.destroy', $poli->id) }}" method="post">
+                                                <form action="{{ route('diagnosa.destroy', $diagnosa->id) }}" method="post">
 
-                                                    <a href="{{ route('poli.update', $poli->id) }}"
+                                                    <a href="{{ route('diagnosa.update', $diagnosa->id) }}"
                                                         class="btn btn-success btn-sm">
                                                         <i class="fas fa-edit"></i> Edit
                                                     </a>
@@ -59,7 +63,7 @@
                                                     @csrf
                                                     @method('delete')
 
-                                                    <button type="submit" class="btn btn-danger btn-sm destroy-poli">
+                                                    <button type="submit" class="btn btn-danger btn-sm destroy-diagnosa">
                                                         <i class="fas fa-trash"></i> Hapus
                                                     </button>
                                                 </form>

@@ -201,3 +201,23 @@ $(".destroy-dokter").on("click", function (e) {
         }
     });
 });
+
+// delete diagnosa
+$(".destroy-diagnosa").on("click", function (e) {
+    var form = $(this).closest("form");
+    e.preventDefault();
+
+    Swal.fire({
+        title: "Apakah anda yakin?",
+        text: "Data diagnosa akan dihapus!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Ya, Hapus!",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            form.submit();
+        }
+    });
+});

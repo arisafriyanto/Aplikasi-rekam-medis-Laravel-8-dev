@@ -2,11 +2,9 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Poli;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
-class PoliRequest extends FormRequest
+class DiagnosaRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,13 +23,9 @@ class PoliRequest extends FormRequest
      */
     public function rules()
     {
-        $rule_poli_unique = Rule::unique('polis', 'nama_poli');
-        if ($this->method() !== "POST") {
-            $rule_poli_unique->ignore($this->route()->parameter('poli')->id);
-        }
-
         return [
-            'nama_poli' => ['required', 'string', 'min:2', 'max:100', $rule_poli_unique]
+            'nama_diagnosa' => ['required', 'string', 'min:2'],
+            'name_diagnosa' => ['required', 'string', 'min:2'],
         ];
     }
 }

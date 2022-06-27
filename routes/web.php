@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{DokterController, HomeController, KunjunganController, ObatController, PasienController, PoliController};
+use App\Http\Controllers\{DiagnosaController, DokterController, HomeController, KunjunganController, ObatController, PasienController, PoliController};
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +47,15 @@ Route::prefix('dokter')->middleware('auth')->group(function () {
     Route::get('/{dokter}/update', [DokterController::class, 'update'])->name('dokter.update');
     Route::patch('/{dokter}/edit', [DokterController::class, 'edit'])->name('dokter.edit');
     Route::delete('/{dokter}/destroy', [DokterController::class, 'destroy'])->name('dokter.destroy');
+});
+
+Route::prefix('diagnosa')->middleware(['auth'])->group(function () {
+    Route::get('/', [DiagnosaController::class, 'index'])->name('diagnosa');
+    Route::get('/create', [DiagnosaController::class, 'create'])->name('diagnosa.create');
+    Route::post('/store', [DiagnosaController::class, 'store'])->name('diagnosa.store');
+    Route::get('/{diagnosa}/update', [DiagnosaController::class, 'update'])->name('diagnosa.update');
+    Route::patch('/{diagnosa}/edit', [DiagnosaController::class, 'edit'])->name('diagnosa.edit');
+    Route::delete('/{diagnosa}/destroy', [DiagnosaController::class, 'destroy'])->name('diagnosa.destroy');
 });
 
 
