@@ -6,7 +6,7 @@
             <div class="page-title-wrapper">
                 <div class="page-title-heading">
                     <div class="page-title-icon">
-                        <i class="pe-7s-notebook icon-gradient bg-mean-fruit">
+                        <i class="pe-7s-display2 icon-gradient bg-mean-fruit">
                         </i>
                     </div>
                     <div>Data Kunjungan
@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <a href="{{ route('kunjungan.create') }}" class="btn btn-info mb-2">
+                <a href="{{ route('kunjungan.create') }}" class="btn btn-primary mb-2">
                     <i class="fas fa-plus"></i> Tambah
                 </a>
 

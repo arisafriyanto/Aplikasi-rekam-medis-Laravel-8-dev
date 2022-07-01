@@ -45,21 +45,21 @@
 
                 <li>
                     <a href="{{ route('obat') }}" class="{{ request()->is('obat') ? ' mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-note2"></i>
+                        <i class="metismenu-icon pe-7s-server"></i>
                         Obat
                     </a>
                 </li>
 
                 <li>
                     <a href="{{ route('pasien') }}" class="{{ request()->is('pasien') ? ' mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-id"></i>
+                        <i class="metismenu-icon pe-7s-user"></i>
                         Pasien
                     </a>
                 </li>
 
                 <li>
                     <a href="{{ route('poli') }}" class="{{ request()->is('poli') ? ' mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-id"></i>
+                        <i class="metismenu-icon pe-7s-note2"></i>
                         Poli
                     </a>
                 </li>
@@ -73,7 +73,7 @@
 
                 <li>
                     <a href="{{ route('diagnosa') }}" class="{{ request()->is('diagnosa') ? ' mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-id"></i>
+                        <i class="metismenu-icon pe-7s-display1"></i>
                         Diagnosa
                     </a>
                 </li>
@@ -81,7 +81,7 @@
                 <li>
                     <a href="{{ route('kunjungan') }}"
                         class="{{ request()->is('kunjungan') ? ' mm-active' : '' }}">
-                        <i class="metismenu-icon pe-7s-id"></i>
+                        <i class="metismenu-icon pe-7s-display2"></i>
                         Kunjungan
                     </a>
                 </li>

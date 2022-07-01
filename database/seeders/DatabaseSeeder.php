@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             ObatSeeder::class,
             PoliSeeder::class,
             PasienSeeder::class,
-            DokterSeeder::class
+            DokterSeeder::class,
+            DiagnosaSeeder::class
         ]);
     }
 }

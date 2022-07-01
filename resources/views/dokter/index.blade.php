@@ -6,7 +6,7 @@
             <div class="page-title-wrapper">
                 <div class="page-title-heading">
                     <div class="page-title-icon">
-                        <i class="pe-7s-notebook icon-gradient bg-mean-fruit">
+                        <i class="pe-7s-id icon-gradient bg-mean-fruit">
                         </i>
                     </div>
                     <div>Data Dokter
@@ -22,8 +22,8 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <a href="{{ route('dokter.create') }}" class="btn btn-info mb-2">
-                    <i class="fas fa-plus"></i> Tambah
+                <a href="{{ route('dokter.create') }}" class="btn btn-primary mb-2">
+                    <i class="fas fa-user-plus"></i> Tambah
                 </a>
 
 

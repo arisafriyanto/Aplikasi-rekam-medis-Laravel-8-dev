@@ -50,6 +50,11 @@
                             <button type="submit" class="btn btn-primary mt-2">
                                 <i class="fas fa-edit"></i> Edit
                             </button>
+
+
+                            <a href="{{ route('poli') }}" class="btn btn-warning mt-2 ml-1">
+                                <i class="fas fa-angle-double-left"></i> Kembali
+                            </a>
                         </form>
                     </div>
                 </div>

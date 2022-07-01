@@ -6,12 +6,12 @@
             <div class="page-title-wrapper">
                 <div class="page-title-heading">
                     <div class="page-title-icon">
-                        <i class="pe-7s-note icon-gradient bg-mean-fruit">
+                        <i class="pe-7s-repeat icon-gradient bg-mean-fruit">
                         </i>
                     </div>
                     <div>Edit Dokter
                         <div class="page-title-subheading">
-                            Edit Dokter adalah halaman untuk menginputkan data dokter.
+                            Edit Dokter adalah halaman untuk mengedit data dokter.
                         </div>
                     </div>
                 </div>
@@ -151,8 +151,13 @@
                             </div>
 
                             <button type="submit" class="btn btn-primary mt-2">
-                                <i class="fas fa-edit"></i> Edit
+                                <i class="fas fa-user-edit"></i> Edit
                             </button>
+
+
+                            <a href="{{ route('dokter') }}" class="btn btn-warning mt-2 ml-1">
+                                <i class="fas fa-angle-double-left"></i> Kembali
+                            </a>
                         </form>
                     </div>
                 </div>

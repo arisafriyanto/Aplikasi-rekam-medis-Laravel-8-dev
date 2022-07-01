@@ -7,7 +7,7 @@
             <div class="page-title-wrapper">
                 <div class="page-title-heading">
                     <div class="page-title-icon">
-                        <i class="pe-7s-plus icon-gradient bg-mean-fruit">
+                        <i class="pe-7s-add-user icon-gradient bg-mean-fruit">
                         </i>
                     </div>
                     <div>Tambah Pasien
@@ -197,6 +197,11 @@
                             <button type="submit" class="btn btn-primary mt-2">
                                 <i class="fas fa-user-plus"></i> Tambah
                             </button>
+
+
+                            <a href="{{ route('pasien') }}" class="btn btn-warning mt-2 ml-1">
+                                <i class="fas fa-angle-double-left"></i> Kembali
+                            </a>
                         </form>
                     </div>
                 </div>
