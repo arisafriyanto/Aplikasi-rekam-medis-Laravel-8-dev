@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <a href="{{ route('kunjungan.create') }}" class="btn btn-primary mb-2">
+                <a href="{{ route('kunjungan.create.step1') }}" class="btn btn-primary mb-2">
                     <i class="fas fa-plus"></i> Tambah
                 </a>
 

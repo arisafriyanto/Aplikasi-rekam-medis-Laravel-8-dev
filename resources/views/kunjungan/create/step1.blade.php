@@ -25,38 +25,40 @@
                     <div class="card-body">
 
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-3 text-center">
                                 <div class="mb-3 card text-white card-body bg-primary">
-                                    <i class="fas fa-user"></i>
+                                    <i class="fas fa-user icon-md mb-2"></i>
                                     <h5 class="text-white card-title">INFORMASI PASIEN</h5>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 card text-white card-body bg-primary">
-                                    <i class="fas fa-user"></i>
-                                    <h5 class="text-white card-title">INFORMASI PASIEN</h5>
+                            <div class="col-md-3 text-center">
+                                <div class="mb-3 card card-body">
+                                    <i class="fas fa-user icon-md mb-2"></i>
+                                    <h5 class="card-title">INFORMASI PASIEN</h5>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 card text-white card-body bg-primary">
-                                    <i class="fas fa-user"></i>
-                                    <h5 class="text-white card-title">INFORMASI PASIEN</h5>
+                            <div class="col-md-3 text-center">
+                                <div class="mb-3 card card-body">
+                                    <i class="fas fa-user icon-md mb-2"></i>
+                                    <h5 class="card-title">INFORMASI PASIEN</h5>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 card text-white card-body bg-primary">
-                                    <i class="fas fa-user"></i>
-                                    <h5 class="text-white card-title">INFORMASI PASIEN</h5>
+                            <div class="col-md-3 text-center">
+                                <div class="mb-3 card card-body">
+                                    <i class="fas fa-user icon-md mb-2"></i>
+                                    <h5 class="card-title">INFORMASI PASIEN</h5>
                                 </div>
                             </div>
                         </div>
 
-                        {{-- <form action="{{ route('kunjungan.store') }}" method="post" class="needs-validation"
+
+                        <form action="{{ route('kunjungan.step1') }}" method="post" class="needs-validation mt-4"
                             id="bash_path">
 
                             @csrf
 
                             <div class="form-row">
+
 
                                 <div class="col-md-12 mb-3">
                                     <label for="nama_pasien">Nama Pasien</label>
@@ -71,7 +73,7 @@
                                     @enderror
                                 </div>
 
-                                <input type="hidden" name="id_pasien" id="id_pasien" value="{{ old('id_pasien') }}">
+                                <input type="hidden" name="pasien_id" id="pasien_id" value="{{ old('pasien_id') }}">
 
                                 <div class="col-md-6 mb-3">
                                     <label for="jenis_registrasi">Jenis Registrasi</label>
@@ -115,7 +117,8 @@
                                 <div class="col-md-6 mb-3">
                                     <label for="poli">Poli Tujuan</label>
 
-                                    <select name="poli" id="poli" class="form-control @error('poli') is-invalid @enderror">
+                                    <select name="poli" id="poli"
+                                        class="form-control @error('poli') is-invalid @enderror">
                                         @foreach ($polis as $poli)
                                             <option value="{{ $poli->id }}">{{ $poli->nama_poli }}</option>
                                         @endforeach
@@ -164,8 +167,7 @@
 
                                 <div class="col-md-12 mb-3">
                                     <label for="keluhan">Keluhan</label>
-                                    <textarea name="keluhan" id="keluhan" class="form-control @error('keluhan') is-invalid @enderror"
-                                        id="keluhan">{{ old('keluhan') }}</textarea>
+                                    <textarea name="keluhan" id="keluhan" class="form-control @error('keluhan') is-invalid @enderror" id="keluhan">{{ old('keluhan') }}</textarea>
 
                                     @error('keluhan')
                                         <span class="invalid-feedback" role="alert">
@@ -200,7 +202,7 @@
                                     @enderror
                                 </div>
 
-                                <input type="hidden" name="id_dokter" id="id_dokter" value="{{ old('id_dokter') }}">
+                                <input type="hidden" name="dokter_id" id="dokter_id" value="{{ old('dokter_id') }}">
 
                                 <div class="col-md-12 mb-3">
                                     <label for="keterangan">Keterangan</label>
@@ -214,21 +216,15 @@
                                     @enderror
                                 </div>
 
-
-
-
-
-
-
-
-
-
                             </div>
 
-                            <button type="submit" class="btn btn-primary mt-3">
-                                <i class="fas fa-plus"></i> Tambah
-                            </button>
-                        </form> --}}
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary mt-3">
+                                    Selanjutnya <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                        </form>
 
 
                     </div>

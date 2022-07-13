@@ -61,6 +61,9 @@ Route::prefix('diagnosa')->middleware(['auth'])->group(function () {
 
 Route::prefix('kunjungan')->middleware('auth')->group(function () {
     Route::get('/', [KunjunganController::class, 'index'])->name('kunjungan');
-    Route::get('/create', [KunjunganController::class, 'create'])->name('kunjungan.create');
-    Route::post('/store', [KunjunganController::class, 'store'])->name('kunjungan.store');
+    Route::get('/create/step1', [KunjunganController::class, 'createStep1'])->name('kunjungan.create.step1');
+    Route::post('/step1', [KunjunganController::class, 'step1'])->name('kunjungan.step1');
+
+    Route::get('/create/step2', [KunjunganController::class, 'createStep2'])->name('kunjungan.create.step2');
+    Route::post('/step2', [KunjunganController::class, 'step2'])->name('kunjungan.step2');
 });

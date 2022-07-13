@@ -41,7 +41,7 @@ $(document).ready(function () {
             if (selectedData && selectedData.item && selectedData.item.data) {
                 var data = selectedData.item.data;
 
-                $("#id_pasien").val(data.id);
+                $("#pasien_id").val(data.id);
                 $("#jenis_registrasi").val(data.jenis_registrasi);
                 $("#no_bpjs").val(data.no_bpjs);
             }
@@ -88,7 +88,7 @@ $(document).ready(function () {
             if (selectedData && selectedData.item && selectedData.item.data) {
                 var data = selectedData.item.data;
 
-                $("#id_dokter").val(data.id);
+                $("#dokter_id").val(data.id);
             }
         },
     });

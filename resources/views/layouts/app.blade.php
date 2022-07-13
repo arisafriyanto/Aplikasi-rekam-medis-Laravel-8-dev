@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mycss.css">
     <link rel="stylesheet" href="/DataTables/datatables.min.css" />
     <link rel="stylesheet" href="/DataTables/responsive.dataTables.min.css">
     <link rel="stylesheet" href="/css/jQuery-1.12.1/jquery-ui.css">

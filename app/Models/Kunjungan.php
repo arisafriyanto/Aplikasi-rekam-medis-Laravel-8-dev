@@ -20,4 +20,9 @@ class Kunjungan extends Model
     {
         return $this->belongsTo(Dokter::class);
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
