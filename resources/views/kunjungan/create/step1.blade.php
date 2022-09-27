@@ -34,7 +34,7 @@
                             <div class="col-md-3 text-center">
                                 <div class="mb-3 card card-body">
                                     <i class="fas fa-user icon-md mb-2"></i>
-                                    <h5 class="card-title">INFORMASI PASIEN</h5>
+                                    <h5 class="card-title">PEMERIKSAAN FISIK</h5>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">

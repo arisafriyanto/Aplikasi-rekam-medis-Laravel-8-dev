@@ -58,7 +58,7 @@
                             @csrf
                             <div class="form-row">
 
-                                <div class="col-md-6 mb-3">
+                                <div class="col-md-12 mb-3">
                                     <label for="kesadaran">Kesadaran</label>
                                     <input type="text" name="kesadaran"
                                         class="form-control @error('kesadaran') is-invalid @enderror" id="kesadaran"
@@ -72,21 +72,85 @@
                                 </div>
 
 
-
                                 <div class="col-md-6 mb-3">
-                                    <label for="tekanan_darah">Tekanan Darah</label>
+                                    <label for="tb">Tinggi Badan</label>
 
                                     <div class="input-group">
-                                        <input type="number" name="tekanan_darah"
-                                            class="form-control  @error('tekanan_darah') is-invalid @enderror"
-                                            id="tekanan_darah" aria-describedby="tekanan_darah"
-                                            value="{{ old('tekanan_darah') }}" placeholder="120/80">
+                                        <input type="number" name="tb"
+                                            class="form-control  @error('tb') is-invalid @enderror" id="tb"
+                                            aria-describedby="tb" value="{{ old('tb') }}">
 
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text" id="tekanan_darah">mmHg</span>
+                                            <span class="input-group-text" id="tb">cm</span>
                                         </div>
 
-                                        @error('tekanan_darah')
+                                        @error('tb')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="bb">Berat Badan</label>
+
+                                    <div class="input-group">
+                                        <input type="number" name="bb"
+                                            class="form-control  @error('bb') is-invalid @enderror" id="bb"
+                                            aria-describedby="bb" value="{{ old('bb') }}">
+
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="bb">kg</span>
+                                        </div>
+
+                                        @error('bb')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="respiratory_rake">Respiratori Rake</label>
+
+                                    <div class="input-group">
+                                        <input type="number" name="respiratory_rake"
+                                            class="form-control  @error('respiratory_rake') is-invalid @enderror"
+                                            id="respiratory_rake" aria-describedby="respiratory_rake"
+                                            value="{{ old('respiratory_rake') }}">
+
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="respiratory_rake">per menit</span>
+                                        </div>
+
+                                        @error('respiratory_rake')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="heart_rafe">Heart Rafe</label>
+
+                                    <div class="input-group">
+                                        <input type="number" name="heart_rafe"
+                                            class="form-control  @error('heart_rafe') is-invalid @enderror" id="heart_rafe"
+                                            aria-describedby="heart_rafe" value="{{ old('heart_rafe') }}">
+
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="heart_rafe">bpm</span>
+                                        </div>
+
+                                        @error('heart_rafe')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>

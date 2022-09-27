@@ -66,4 +66,7 @@ Route::prefix('kunjungan')->middleware('auth')->group(function () {
 
     Route::get('/create/step2', [KunjunganController::class, 'createStep2'])->name('kunjungan.create.step2');
     Route::post('/step2', [KunjunganController::class, 'step2'])->name('kunjungan.step2');
+
+    Route::get('/create/step3', [KunjunganController::class, 'createStep3'])->name('kunjungan.create.step3');
+    Route::post('/step3', [KunjunganController::class, 'step3'])->name('kunjungan.step3');
 });

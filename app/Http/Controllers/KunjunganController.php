@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\KunjunganStep1Request;
+use App\Http\Requests\{KunjunganStep1Request, KunjunganStep2Request};
 use App\Models\{Kunjungan, Dokter, Poli};
 
 class KunjunganController extends Controller
@@ -36,12 +36,25 @@ class KunjunganController extends Controller
         $posted = auth()->user()->kunjungans()->create($attr);
 
 
-        session()->flash('success', 'Data berhasil ditambah');
+        session()->flash('success', 'Informasi pasien berhasil ditambah');
         return redirect('kunjungan/create/step2');
     }
 
     public function createStep2()
     {
         return view('kunjungan.create.step2');
+    }
+
+    public function step2(KunjunganStep2Request $request, Kunjungan $kunjungan)
+    {
+        $attr = $request->all();
+
+        dd($attr);
+
+        // $kunjungan->update($attr);
+
+
+        // session()->flash('success', 'Pemeriksaan fisik berhasil ditambah');
+        // return redirect('kunjungan/create/step3');
     }
 }
